@@ -4,9 +4,9 @@ type Props = {
 };
 const SliderItem = ({ title, content }: Props) => {
   return (
-    <div>
-      <h1 className="mb-6 w-full text-2xl">{title}</h1>
-      <p className="leading-5">{content}</p>
+    <div className="mb-4">
+      <h1>{title}</h1>
+      <p>{content}</p>
     </div>
   );
 };

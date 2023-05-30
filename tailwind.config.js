@@ -6,6 +6,11 @@ export default {
       fontFamily: {
         body: ["Varela Round"],
       },
+      content: {
+        google: 'url("/icons/google-logo.svg")',
+        facebook: 'url("/icons/facebook-logo.svg")',
+        apple: 'url("/icons/apple-logo.svg")',
+      },
       colors: {
         site: {
           bg: "#eef8ff",

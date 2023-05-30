@@ -1,7 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import LoadingPage from "./LoadingPage";
-import SneakPick from "./SneakPick";
+import SneakPeek from "./SneakPeek";
+import Signup from "./Signup";
+import Step1 from "../components/signup/Step1";
+import Step2 from "../components/signup/Step2";
+import Step3 from "../components/signup/Step3";
 
 export const router = createBrowserRouter([
   {
@@ -14,6 +18,24 @@ export const router = createBrowserRouter([
   },
   {
     path: "/sneak-peek",
-    element: <SneakPick />,
+    element: <SneakPeek />,
+  },
+  {
+    path: "/signup",
+    element: <Signup />,
+    children: [
+      {
+        path: "/signup/1",
+        element: <Step1 />,
+      },
+      {
+        path: "/signup/2",
+        element: <Step2 />,
+      },
+      {
+        path: "/signup/3",
+        element: <Step3 />,
+      },
+    ],
   },
 ]);
