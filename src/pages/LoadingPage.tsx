@@ -1,7 +1,7 @@
 const LoadingPage = () => {
   return (
     <div className="flex h-screen items-center justify-center">
-      <img src="/public/brand.svg" className="w-[260px]" alt="" />
+      <img src="/brand.svg" className="w-[260px]" alt="" />
     </div>
   );
 };

@@ -8,17 +8,8 @@
   @apply leading-5;
 }
 
-h1 {
-  @apply mb-2 w-full text-xl;
-}
-
-.input,
-.select {
-  @apply my-2 h-14 w-full rounded-full bg-white px-4;
-}
-
 .btn {
-  @apply rounded-full px-4 py-2 text-sm font-semibold;
+  @apply rounded-full text-sm font-semibold;
 }
 
 /* Screen spliting in SneakPeek page */
@@ -35,15 +26,15 @@ h1 {
 
 /* slack slider */
 ul.slick-dots {
-  @apply mx-4 mb-6;
+  @apply mb-[37px] mt-2 text-center;
 }
 ul.slick-dots li {
   @apply inline-block h-4 w-4 cursor-pointer px-1;
-  background: url("/public/icons/dot.svg") no-repeat center;
+  background: url("/icons/dot.svg") no-repeat center;
 }
 
 .slick-dots li.slick-active {
-  background: url("/public/icons/dot-filled.svg") no-repeat center;
+  background: url("/icons/dot-filled.svg") no-repeat center;
 }
 
 ul.slick-dots li button {

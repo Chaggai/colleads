@@ -1,15 +1,18 @@
-import { useTranslation } from "react-i18next";
+import { t } from "i18next";
 import { useNavigate } from "react-router-dom";
 
+import TitleWithMessage from "../TitleWithMessage";
+
 const Step1 = () => {
-  const { t } = useTranslation();
   const navigate = useNavigate();
 
   return (
-    <div className="flex h-full flex-col">
+    <div className="flex flex-col">
       <div className="mb-20">
-        <h1>{t("signup.stepOne.title")}</h1>
-        <h2>{t("signup.stepOne.subTitle")}</h2>
+        <TitleWithMessage
+          title={t("signup.stepOne.title")}
+          message={t("signup.stepOne.subTitle")}
+        />
       </div>
       <div className="mb-10">
         <button
@@ -31,8 +34,9 @@ const Step1 = () => {
           {t("signup.stepOne.withApple")}
         </button>
       </div>
-      <div>
-        <label className="block">
+      <div className="mb-20">
+        <label className="mb-4 block">
+          {/* TODO: Move text to i18n */}
           <input className="ml-3" type="checkbox" />
           קראתי ואישרתי את{" "}
           <a className="text-site-lightblue" href="#">
@@ -48,8 +52,8 @@ const Step1 = () => {
           אשמח לקבל עדכונים וטיפים למייל
         </label>
       </div>
-      <div className="mb-10 mt-auto">
-        כבר נרשמת?
+      <div className="text-center">
+        כבר נרשמת?{" "}
         <a className="text-site-lightblue" href="#">
           הכניסה מכאן
         </a>

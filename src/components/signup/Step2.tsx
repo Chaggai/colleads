@@ -1,66 +1,45 @@
-import { useTranslation } from "react-i18next";
+import { t } from "i18next";
 import { useNavigate } from "react-router-dom";
 
+import TitleWithMessage from "../TitleWithMessage";
+import Input from "../Controlls/Input";
+import Select from "../Controlls/Select";
+
 const Step2 = () => {
-  const { t } = useTranslation();
   const navigate = useNavigate();
 
   return (
-    <div className="grid grid-rows-6">
-      <div className="row-span-1 mb-4">
-        <h1>{t("signup.stepTwo.title")}</h1>
-        <p>{t("signup.stepTwo.message")}</p>
+    <div className="flex flex-col">
+      <div className="mb-4">
+        <TitleWithMessage
+          title={t("signup.stepTwo.title")}
+          message={t("signup.stepTwo.message")}
+        />
       </div>
-      <div className="row-span-4">
-        <input
-          className="input"
-          type="text"
-          placeholder={`${t("signup.input.firstname")}`}
+      <div className="mb-14">
+        <Input type="text" placeholder={`${t("signup.input.firstname")}`} />
+        <Input type="text" placeholder={`${t("signup.input.lastname")}`} />
+        <Select
+          options={["1", "2", "3", "4"]}
+          defaultValue={`${t("signup.stepTwo.profession")}`}
         />
-        <input
-          className="input"
-          type="text"
-          placeholder={`${t("signup.input.lastname")}`}
-        />
-        <select
-          className="select"
-          name="profession"
-          defaultValue={"profession"}
-          id="profession"
-        >
-          <option value="profession" disabled>
-            {t("signup.stepTwo.profession")}
-          </option>
-          <option value="אחד">אחד</option>
-          <option value="שתיים">שתיים</option>
-          <option value="שלוש">שלוש</option>
-        </select>
-        <input
-          className="input"
-          type="text"
-          placeholder={`${t("signup.input.licenseNumber")}`}
-        />
+        <Input type="text" placeholder={`${t("signup.input.licenseNumber")}`} />
         <figure className="flex justify-between">
-          <input
-            className="input"
+          <Input
+            className="w-48"
             type="text"
             placeholder={`${t("signup.input.phoneNumber")}`}
           />
-          <select
-            className="select w-28"
-            name="profession"
-            id="profession"
-            defaultValue={"050"}
-          >
-            <option value="050">050</option>
-            <option value="052">052</option>
-            <option value="054">054</option>
-          </select>
+          <Select
+            defaultValue="05x"
+            options={["050", "052", "053"]}
+            className="w-24"
+          />
         </figure>
       </div>
       <button
         onClick={() => navigate("/signup/3")}
-        className="btn row-span-1 h-16 bg-site-lightblue text-white"
+        className="btn h-[72px] bg-site-lightblue text-white"
       >
         {t("signup.stepTwo.button")}
       </button>

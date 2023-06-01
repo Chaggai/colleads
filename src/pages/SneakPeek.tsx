@@ -1,13 +1,12 @@
-import { useTranslation } from "react-i18next";
+import { t } from "i18next";
 import Slider, { Settings } from "react-slick";
-
-import "slick-carousel/slick/slick.css";
 
 import SliderItem from "../components/SliderItem";
 import { useNavigate } from "react-router-dom";
 
+import "slick-carousel/slick/slick.css";
+
 const SneakPeek = () => {
-  const { t } = useTranslation();
   const navigate = useNavigate();
 
   const settings: Settings = {
@@ -19,14 +18,14 @@ const SneakPeek = () => {
   };
 
   const handleClick = () => {
-    navigate("/signup");
+    navigate("/signup/1");
   };
 
   return (
     <div
       className="skewed flex h-screen"
       style={{
-        backgroundImage: "url(/public/img/sneak-pick.png)",
+        backgroundImage: "url(/img/sneak-pick.png)",
         backgroundSize: "cover",
       }}
     >
@@ -46,7 +45,7 @@ const SneakPeek = () => {
           />
         </Slider>
         <button
-          className="btn relative bg-site-lightblue text-site-bg"
+          className="btn relative h-[38px] w-[146px] bg-site-lightblue text-site-bg"
           onClick={handleClick}
         >
           {t("button.signup")}
