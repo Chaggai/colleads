@@ -6,7 +6,7 @@ const Friend = () => {
     <figure className="mb-4 flex items-center">
       <Avatar
         image="https://imglarger.com/Images/before-after/ai-image-enlarger-1-after-2.jpg"
-        name="Avner Gadasias"
+        name="Avner Gadasi"
       />
       <div className="mx-6 flex flex-col">
         <span>אסף רפפורט</span>
