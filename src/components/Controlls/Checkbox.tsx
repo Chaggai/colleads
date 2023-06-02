@@ -24,13 +24,13 @@ const Checkbox = ({
       />
       {isChecked ? (
         <i
-          className={`after:content-checkbox-checked ${
+          className={`h-[21px] w-[21px] after:content-checkbox-checked ${
             iconClassName ? iconClassName : ""
           }`}
         />
       ) : (
         <i
-          className={`after:content-checkbox ${
+          className={`h-[21px] w-[21px] after:content-checkbox ${
             iconClassName ? iconClassName : ""
           }`}
         />

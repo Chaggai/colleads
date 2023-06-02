@@ -4,8 +4,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@media screen and (orientation: landscape) {
+  html::after {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "אפליקציה זו אינה תומכת מסך רחב";
+    font-size: 2rem;
+  }
+  body {
+    display: none;
+  }
+}
+
 :root {
   @apply leading-5;
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
 
 .btn {

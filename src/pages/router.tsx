@@ -6,6 +6,8 @@ import Signup from "./Signup";
 import Step1 from "../components/signup/Step1";
 import Step2 from "../components/signup/Step2";
 import Step3 from "../components/signup/Step3";
+import Step4 from "../components/signup/Step4";
+import FirstTime from "./FirstTime";
 
 export const router = createBrowserRouter([
   {
@@ -37,5 +39,13 @@ export const router = createBrowserRouter([
         element: <Step3 />,
       },
     ],
+  },
+  {
+    path: "/signup/4",
+    element: <Step4 />,
+  },
+  {
+    path: "/first-time",
+    element: <FirstTime />,
   },
 ]);

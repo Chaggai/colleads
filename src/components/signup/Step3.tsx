@@ -19,12 +19,15 @@ const Step3 = () => {
         <FriendList />
       </div>
       <button
-        onClick={() => navigate("/signup/3")}
+        onClick={() => navigate("/signup/4")}
         className="btn h-[72px] bg-site-lightblue text-white"
       >
         {t("signup.stepThree.button")}
       </button>
-      <Link className="mt-6 text-center font-bold text-site-lightblue" to="/">
+      <Link
+        className="mt-6 text-center font-bold text-site-lightblue"
+        to="/loading"
+      >
         דלג
       </Link>
     </div>
