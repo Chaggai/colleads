@@ -13,6 +13,12 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    children: [
+      {
+        path: "/first-time",
+        element: <FirstTime />,
+      },
+    ],
   },
   {
     path: "/loading",
@@ -43,9 +49,5 @@ export const router = createBrowserRouter([
   {
     path: "/signup/4",
     element: <Step4 />,
-  },
-  {
-    path: "/first-time",
-    element: <FirstTime />,
   },
 ]);

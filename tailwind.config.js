@@ -13,6 +13,8 @@ export default {
         apple: 'url("/icons/apple-logo.svg")',
         checkbox: 'url("/icons/checkbox.svg")',
         "checkbox-checked": 'url("/icons/checkbox-checked.svg")',
+        "menu-dots": 'url("/icons/menu-dots.svg")',
+        bell: 'url("/icons/bell.svg")',
       },
       colors: {
         site: {

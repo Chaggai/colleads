@@ -1,7 +1,11 @@
+import { Outlet } from "react-router-dom";
+import Header from "./layout/Header";
+
 const App = () => {
   return (
-    <div className="flex h-full items-center justify-center font-bold">
-      אפליקציה
+    <div>
+      <Header />
+      <Outlet />
     </div>
   );
 };
