@@ -27,10 +27,6 @@
   display: none;
 }
 
-.btn {
-  @apply rounded-full text-sm font-semibold;
-}
-
 /* Screen spliting in SneakPeek page */
 .skewed:before {
   position: absolute;

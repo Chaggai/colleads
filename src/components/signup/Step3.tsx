@@ -3,6 +3,7 @@ import { t } from "i18next";
 
 import FriendList from "../Friends/FriendList";
 import TitleWithMessage from "../TitleWithMessage";
+import Button from "../Controlls/Button";
 
 const Step3 = () => {
   const navigate = useNavigate();
@@ -18,12 +19,11 @@ const Step3 = () => {
       <div className="mb-6">
         <FriendList />
       </div>
-      <button
-        onClick={() => navigate("/signup/4")}
+      <Button
+        label={t("signup.stepThree.button")}
+        click={() => navigate("/signup/4")}
         className="btn h-[72px] bg-site-lightblue text-white"
-      >
-        {t("signup.stepThree.button")}
-      </button>
+      />
       <Link
         className="mt-6 text-center font-bold text-site-lightblue"
         to="/loading"

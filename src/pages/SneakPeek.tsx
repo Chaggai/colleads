@@ -5,6 +5,7 @@ import SliderItem from "../components/SliderItem";
 import { useNavigate } from "react-router-dom";
 
 import "slick-carousel/slick/slick.css";
+import Button from "../components/Controlls/Button";
 
 const SneakPeek = () => {
   const navigate = useNavigate();
@@ -44,12 +45,11 @@ const SneakPeek = () => {
             content={t("SneakPeek.paragraph.3")}
           />
         </Slider>
-        <button
+        <Button
+          label={t("button.signup")}
           className="btn relative h-[38px] w-[146px] bg-site-lightblue text-site-bg"
-          onClick={handleClick}
-        >
-          {t("button.signup")}
-        </button>
+          click={handleClick}
+        />
       </div>
     </div>
   );

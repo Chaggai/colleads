@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 import TitleWithMessage from "../TitleWithMessage";
 import Checkbox from "../Controlls/Checkbox";
+import Button from "../Controlls/Button";
 
 const Step1 = () => {
   const navigate = useNavigate();
@@ -16,24 +17,21 @@ const Step1 = () => {
         />
       </div>
       <div className="mb-10">
-        <button
-          onClick={() => navigate("/signup/2")}
+        <Button
+          label={t("signup.stepOne.withGoogle")}
+          click={() => navigate("/signup/2")}
           className="btn relative mb-6 h-14 w-full bg-white after:absolute after:left-4 after:top-1 after:pt-1.5 after:content-google"
-        >
-          {t("signup.stepOne.withGoogle")}
-        </button>
-        <button
-          onClick={() => navigate("/signup/2")}
+        />
+        <Button
+          label={t("signup.stepOne.withFacebook")}
+          click={() => navigate("/signup/2")}
           className="btn relative mb-6 h-14 w-full bg-white after:absolute after:left-4 after:top-1 after:pt-1.5 after:content-facebook"
-        >
-          {t("signup.stepOne.withFacebook")}
-        </button>
-        <button
-          onClick={() => navigate("/signup/2")}
+        />
+        <Button
+          label={t("signup.stepOne.withApple")}
+          click={() => navigate("/signup/2")}
           className="btn relative mb-6 h-14 w-full bg-white after:absolute after:left-4 after:top-1 after:pt-1.5 after:content-apple"
-        >
-          {t("signup.stepOne.withApple")}
-        </button>
+        />
       </div>
       <div className="mb-20">
         <Checkbox

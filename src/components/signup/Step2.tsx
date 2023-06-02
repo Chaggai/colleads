@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import TitleWithMessage from "../TitleWithMessage";
 import Input from "../Controlls/Input";
 import Select from "../Controlls/Select";
+import Button from "../Controlls/Button";
 
 const Step2 = () => {
   const navigate = useNavigate();
@@ -50,12 +51,11 @@ const Step2 = () => {
           />
         </figure>
       </div>
-      <button
-        onClick={() => navigate("/signup/3")}
+      <Button
+        label={t("signup.stepTwo.button")}
+        click={() => navigate("/signup/3")}
         className="btn h-[72px] bg-site-lightblue text-white"
-      >
-        {t("signup.stepTwo.button")}
-      </button>
+      />
     </div>
   );
 };
