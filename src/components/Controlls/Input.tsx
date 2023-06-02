@@ -6,7 +6,7 @@ type Props = {
 const Input = ({ placeholder, type, className }: Props) => {
   return (
     <input
-      className={`mb-[18px] h-[57px] w-full rounded-full bg-white px-4 ${
+      className={`mb-[18px] h-[57px] rounded-full bg-white px-4 ${
         className ? className : ""
       }`}
       type={type}

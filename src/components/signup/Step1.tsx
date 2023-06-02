@@ -2,6 +2,7 @@ import { t } from "i18next";
 import { useNavigate } from "react-router-dom";
 
 import TitleWithMessage from "../TitleWithMessage";
+import Checkbox from "../Controlls/Checkbox";
 
 const Step1 = () => {
   const navigate = useNavigate();
@@ -35,22 +36,24 @@ const Step1 = () => {
         </button>
       </div>
       <div className="mb-20">
-        <label className="mb-4 block">
-          {/* TODO: Move text to i18n */}
-          <input className="ml-3" type="checkbox" />
-          קראתי ואישרתי את{" "}
-          <a className="text-site-lightblue" href="#">
-            תנאי השימוש{" "}
-          </a>
-          ואת{" "}
-          <a className="text-site-lightblue" href="#">
-            תנאי הפרטיות
-          </a>
-        </label>
-        <label className="block">
-          <input className="ml-3" type="checkbox" />
-          אשמח לקבל עדכונים וטיפים למייל
-        </label>
+        <Checkbox
+          className="mb-4"
+          iconClassName="ml-6"
+          label={
+            <>
+              קראתי ואישרתי את{" "}
+              <a className="text-site-lightblue" href="#">
+                תנאי השימוש{" "}
+              </a>
+              ואת{" "}
+              <a className="text-site-lightblue" href="#">
+                תנאי הפרטיות
+              </a>
+            </>
+          }
+        />
+
+        <Checkbox iconClassName="ml-6" label="אשמח לקבל עדכונים וטיפים למייל" />
       </div>
       <div className="text-center">
         כבר נרשמת?{" "}

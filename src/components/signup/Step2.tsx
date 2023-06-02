@@ -17,23 +17,36 @@ const Step2 = () => {
         />
       </div>
       <div className="mb-14">
-        <Input type="text" placeholder={`${t("signup.input.firstname")}`} />
-        <Input type="text" placeholder={`${t("signup.input.lastname")}`} />
+        <Input
+          className="w-full"
+          type="text"
+          placeholder={`${t("signup.input.firstname")}`}
+        />
+        <Input
+          className="w-full"
+          type="text"
+          placeholder={`${t("signup.input.lastname")}`}
+        />
         <Select
           options={["1", "2", "3", "4"]}
           defaultValue={`${t("signup.stepTwo.profession")}`}
+          className="w-full"
         />
-        <Input type="text" placeholder={`${t("signup.input.licenseNumber")}`} />
+        <Input
+          className="w-full"
+          type="text"
+          placeholder={`${t("signup.input.licenseNumber")}`}
+        />
         <figure className="flex justify-between">
           <Input
-            className="w-48"
             type="text"
             placeholder={`${t("signup.input.phoneNumber")}`}
+            className="ml-4 w-2/3"
           />
           <Select
+            className="w-1/3"
             defaultValue="05x"
             options={["050", "052", "053"]}
-            className="w-24"
           />
         </figure>
       </div>

@@ -1,4 +1,5 @@
 import Avatar from "../Avatar";
+import Checkbox from "../Controlls/Checkbox";
 
 const Friend = () => {
   return (
@@ -11,7 +12,7 @@ const Friend = () => {
         <span>אסף רפפורט</span>
         <small>ריפוי בעיסוק</small>
       </div>
-      <input type="checkbox" className="ml-3 mr-auto" name="" id="" />
+      <Checkbox className="mr-auto" />
     </figure>
   );
 };

@@ -10,16 +10,15 @@ const Select = ({ options, className, defaultValue }: Props) => {
 
   return (
     <select
-      className={`mb-[18px] h-[57px] w-full rounded-full bg-white px-4 selection:text-red-400 ${
+      className={`mb-[18px] h-[57px] rounded-full bg-white px-4 selection:text-red-400 ${
         isSelected ? "text-black" : "text-gray-400"
       } ${className ? className : ""}`}
       name="profession"
       id="profession"
       onChange={() => setIsSelected(true)}
+      value={defaultValue}
     >
-      <option disabled selected>
-        {defaultValue}
-      </option>
+      <option disabled>{defaultValue}</option>
       {options.map((option) => (
         <option key={option} value={option}>
           {option}
