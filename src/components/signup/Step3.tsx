@@ -22,7 +22,7 @@ const Step3 = () => {
       <Button
         label={t("signup.stepThree.button")}
         click={() => navigate("/signup/4")}
-        className="btn h-[72px] bg-site-lightblue text-white"
+        className="h-[72px] bg-site-lightblue text-white"
       />
       <Link
         className="mt-6 text-center font-bold text-site-lightblue"

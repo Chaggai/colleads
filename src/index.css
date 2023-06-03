@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@media screen and (orientation: landscape) {
+/* @media screen and (orientation: landscape) {
   html::after {
     width: 100vw;
     height: 100vh;
@@ -17,7 +17,7 @@
   body {
     display: none;
   }
-}
+} */
 
 :root {
   @apply leading-5;

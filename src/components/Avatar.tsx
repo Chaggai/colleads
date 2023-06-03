@@ -20,7 +20,7 @@ const Avatar = ({ image, name, className, borderColor }: Props) => {
 
   return (
     <div
-      className={`flex h-[68px] w-[68px] items-center justify-center overflow-hidden rounded-full border-4 ${
+      className={`flex items-center justify-center overflow-hidden rounded-full border-4 ${
         !borderColor
           ? colors[Math.floor(Math.random() * colors.length)]
           : borderColor
