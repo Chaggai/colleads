@@ -1,7 +1,7 @@
 import Avatar from "../Avatar";
 import Checkbox from "../Controlls/Checkbox";
 
-const Friend = () => {
+const Colleague = () => {
   return (
     <figure className="mb-4 flex items-center">
       <Avatar
@@ -17,4 +17,4 @@ const Friend = () => {
     </figure>
   );
 };
-export default Friend;
+export default Colleague;

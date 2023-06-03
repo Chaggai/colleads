@@ -1,9 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
 import { t } from "i18next";
 
-import FriendList from "../Friends/FriendList";
 import TitleWithMessage from "../TitleWithMessage";
 import Button from "../Controlls/Button";
+import ColleagueList from "../Colleagues/ColleagueList";
 
 const Step3 = () => {
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ const Step3 = () => {
         />
       </div>
       <div className="mb-6">
-        <FriendList />
+        <ColleagueList />
       </div>
       <Button
         label={t("signup.stepThree.button")}

@@ -1,15 +1,15 @@
-import CreateLeadButton from "../components/Friends/CreateReferenceButton";
 import Reference, { TReference } from "../components/Reference";
 
 import data from "../../public/data/references.json";
 import SvgIcon from "../components/SvgIcon";
+import CreateReferenceButton from "../components/Colleagues/CreateReferenceButton";
 
 const FirstTime = () => {
   const references: TReference[] = data;
 
   return (
     <div className="p-7">
-      <CreateLeadButton />
+      <CreateReferenceButton />
       <div className="mb-10 text-center">
         <h1 className="mb-2 text-xl font-bold">היי יעל,</h1>
         <h2 className="mb-2 font-bold">איזה כיף שהצטרפת אלינו!</h2>
