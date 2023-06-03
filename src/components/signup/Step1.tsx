@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import TitleWithMessage from "../TitleWithMessage";
 import Checkbox from "../Controlls/Checkbox";
 import LoginButton from "../Controlls/LoginButton";
-import { Logos } from "../SvgIcon";
 
 const Step1 = () => {
   const navigate = useNavigate();

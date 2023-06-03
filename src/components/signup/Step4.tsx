@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import Avatar from "../Avatar";
 import { useNavigate } from "react-router-dom";
 
+import data from "../../../public/data/colleagues.json";
+
 const Step4 = () => {
   const navigate = useNavigate();
   useEffect(() => {
@@ -13,19 +15,19 @@ const Step4 = () => {
         <Avatar
           className="relative -left-2 h-[68px] w-[68px]"
           borderColor="border-site-bg"
-          image="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Outdoors-man-portrait_%28cropped%29.jpg/1280px-Outdoors-man-portrait_%28cropped%29.jpg"
-          name="Avner Gadasias"
+          image={data[0].image}
+          name={data[0].name}
         />
         <Avatar
           borderColor="border-site-bg h-[68px] w-[68px]"
-          image="https://www.lofficielusa.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F39109%2F1611085012-1609881742604438-modelo.jpg%3Fauto%3Dformat%252Ccompress%26cs%3Dsrgb&w=3840&q=75"
-          name="Avner Gadasias"
+          image={data[1].image}
+          name={data[1].name}
         />
         <Avatar
           className="relative -right-2 h-[68px] w-[68px]"
           borderColor="border-site-bg"
-          image="https://imglarger.com/Images/before-after/ai-image-enlarger-1-after-2.jpg"
-          name="Avner Gadasias"
+          image={data[6].image}
+          name={data[6].name}
         />
       </div>
       <strong>בחירה מעולה!</strong>
