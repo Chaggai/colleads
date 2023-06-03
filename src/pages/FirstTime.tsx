@@ -2,6 +2,7 @@ import CreateLeadButton from "../components/Friends/CreateReferenceButton";
 import Reference, { TReference } from "../components/Reference";
 
 import data from "../../public/data/references.json";
+import SvgIcon from "../components/SvgIcon";
 
 const FirstTime = () => {
   const references: TReference[] = data;
@@ -19,12 +20,16 @@ const FirstTime = () => {
           <br /> אפשרויות בשבילך...
         </p>
       </div>
-      <div className="flex items-end">
-        <i className="before:content-pin"></i>
+      <div className="mb-6 flex items-end">
+        <button className="relative -top-1">
+          <SvgIcon name="pin" />
+        </button>
         <span className="mr-4">לוח הפניות ציבורי</span>
-        <i className="mr-auto before:content-tune"></i>
+        <button className="mr-auto">
+          <SvgIcon name="tune" />
+        </button>
       </div>
-      <div className="mt-4 flex max-h-[550px] flex-wrap gap-4 overflow-y-scroll">
+      <div className="flex max-h-[550px] flex-wrap gap-4 overflow-y-scroll">
         {references.map((ref) => (
           <Reference key={ref.id} reference={ref} />
         ))}

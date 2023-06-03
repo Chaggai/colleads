@@ -2,8 +2,9 @@ type Props = {
   label: string;
   className?: string;
   click?: () => void;
+  children?: JSX.Element;
 };
-const Button = ({ label, className, click }: Props) => {
+const Button = ({ label, className, click, children }: Props) => {
   return (
     <button
       className={`rounded-full text-sm font-semibold ${
@@ -12,6 +13,7 @@ const Button = ({ label, className, click }: Props) => {
       onClick={click}
     >
       {label}
+      {children && children}
     </button>
   );
 };

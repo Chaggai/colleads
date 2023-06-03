@@ -6,19 +6,6 @@ export default {
       fontFamily: {
         body: ["Varela Round"],
       },
-      // Icons
-      content: {
-        google: 'url("/icons/google-logo.svg")',
-        facebook: 'url("/icons/facebook-logo.svg")',
-        apple: 'url("/icons/apple-logo.svg")',
-        checkbox: 'url("/icons/checkbox.svg")',
-        "checkbox-checked": 'url("/icons/checkbox-checked.svg")',
-        "menu-dots": 'url("/icons/menu-dots.svg")',
-        "document-with-stars": 'url("/icons/document-with-stars.svg")',
-        bell: 'url("/icons/bell.svg")',
-        pin: 'url("/icons/pin.svg")',
-        tune: 'url("/icons/tune.svg")',
-      },
       flex: {
         "1-0-149": "1 0 149px",
       },

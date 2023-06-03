@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 
 import TitleWithMessage from "../TitleWithMessage";
 import Checkbox from "../Controlls/Checkbox";
-import Button from "../Controlls/Button";
+import LoginButton from "../Controlls/LoginButton";
+import { Logos } from "../SvgIcon";
 
 const Step1 = () => {
   const navigate = useNavigate();
@@ -17,33 +18,20 @@ const Step1 = () => {
         />
       </div>
       <div className="mb-10">
-        <Button
-          label={t("signup.stepOne.withGoogle")}
-          click={() => navigate("/signup/2")}
-          className="btn relative mb-6 h-14 w-full bg-white after:absolute after:left-4 after:top-1 after:pt-1.5 after:content-google"
-        />
-        <Button
-          label={t("signup.stepOne.withFacebook")}
-          click={() => navigate("/signup/2")}
-          className="btn relative mb-6 h-14 w-full bg-white after:absolute after:left-4 after:top-1 after:pt-1.5 after:content-facebook"
-        />
-        <Button
-          label={t("signup.stepOne.withApple")}
-          click={() => navigate("/signup/2")}
-          className="btn relative mb-6 h-14 w-full bg-white after:absolute after:left-4 after:top-1 after:pt-1.5 after:content-apple"
-        />
+        <LoginButton logo={"google"} click={() => navigate("/signup/2")} />
+        <LoginButton logo={"facebook"} click={() => navigate("/signup/2")} />
+        <LoginButton logo={"apple"} click={() => navigate("/signup/2")} />
       </div>
       <div className="mb-20">
         <Checkbox
           className="mb-4"
-          iconClassName="ml-6"
           label={
             <>
               קראתי ואישרתי את{" "}
               <a className="text-site-lightblue" href="#">
                 תנאי השימוש{" "}
               </a>
-              ואת{" "}
+              ואת <br />
               <a className="text-site-lightblue" href="#">
                 תנאי הפרטיות
               </a>
@@ -51,7 +39,7 @@ const Step1 = () => {
           }
         />
 
-        <Checkbox iconClassName="ml-6" label="אשמח לקבל עדכונים וטיפים למייל" />
+        <Checkbox label="אשמח לקבל עדכונים וטיפים למייל" />
       </div>
       <div className="text-center">
         כבר נרשמת?{" "}
