@@ -8,6 +8,7 @@ import Step2 from "../components/signup/Step2";
 import Step3 from "../components/signup/Step3";
 import Step4 from "../components/signup/Step4";
 import FirstTime from "./FirstTime";
+import Login from "./Login";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
   {
     path: "/sneak-peek",
     element: <SneakPeek />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
   {
     path: "/signup",

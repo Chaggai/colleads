@@ -8,7 +8,7 @@ const FirstTime = () => {
   const references: TReference[] = data;
 
   return (
-    <div className="p-7">
+    <div className="p-7 pb-0">
       <CreateReferenceButton />
       <div className="mb-10 text-center">
         <h1 className="mb-2 text-xl font-bold">היי יעל,</h1>
@@ -29,7 +29,7 @@ const FirstTime = () => {
           <SvgIcon name="tune" />
         </button>
       </div>
-      <div className="flex max-h-[550px] flex-wrap gap-4 overflow-y-scroll">
+      <div className="flex max-h-[550px] flex-wrap gap-4 overflow-y-scroll pb-1">
         {references.map((ref) => (
           <Reference key={ref.id} reference={ref} />
         ))}

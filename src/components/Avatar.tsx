@@ -24,7 +24,7 @@ const Avatar = ({ image, name, className, borderColor }: Props) => {
         !borderColor
           ? colors[Math.floor(Math.random() * colors.length)]
           : borderColor
-      } ${className ? className : ""} ${!image && "border-0 bg-[#FAFAEA]"}`}
+      } ${!image && "border-0 bg-[#FAFAEA]"} ${className ? className : ""}`}
     >
       {image ? (
         <img src={image} alt={name} />

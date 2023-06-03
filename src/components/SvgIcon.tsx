@@ -7,7 +7,10 @@ export type Icons =
   | "bell"
   | "pin"
   | "tune"
-  | "document-with-stars";
+  | "document-with-stars"
+  | "home"
+  | "document"
+  | "users";
 
 type Props = {
   name: Icons | Logos;
