@@ -16,7 +16,7 @@ type Props = {
 };
 const Reference = ({ reference }: Props) => {
   return (
-    <Card className="relative flex-1-0-149 pt-12 text-center leading-6 text-gray-500 shadow">
+    <Card className="relative flex-two-columns pt-12 text-center leading-6 text-gray-500 shadow">
       <div className="flex h-full flex-col">
         <Avatar
           className="absolute right-[8px] top-[8px] h-[35px] w-[35px]"

@@ -7,7 +7,7 @@ export default {
         body: ["Varela Round"],
       },
       flex: {
-        "1-0-149": "1 0 149px",
+        "two-columns": "1 0 148px",
       },
       colors: {
         site: {

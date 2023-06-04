@@ -16,6 +16,7 @@ const SneakPeek = () => {
     arrows: false,
     infinite: true,
     speed: 500,
+    rtl: true,
   };
 
   const handleClick = () => {

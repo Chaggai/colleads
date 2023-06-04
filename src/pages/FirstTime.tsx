@@ -29,7 +29,7 @@ const FirstTime = () => {
           <SvgIcon name="tune" />
         </button>
       </div>
-      <div className="flex max-h-[550px] flex-wrap gap-4 overflow-y-scroll pb-1">
+      <div className="flex max-h-[550px] flex-wrap gap-2 overflow-y-scroll pb-1">
         {references.map((ref) => (
           <Reference key={ref.id} reference={ref} />
         ))}

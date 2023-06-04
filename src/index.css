@@ -41,7 +41,7 @@
 
 /* slack slider */
 ul.slick-dots {
-  @apply mb-[37px] mt-2 text-center;
+  @apply mx-12 mb-[37px] mt-2;
 }
 ul.slick-dots li {
   @apply inline-block h-4 w-4 cursor-pointer px-1;

@@ -11,12 +11,13 @@ const CreateReferenceButton = () => {
     "font-bold",
     "h-[68px]",
     "flex",
-    "justify-end",
+    "justify-center",
     "items-center",
     "text-site-lightblue",
-    "w-[75%]",
+    "w-[276px]",
     "mx-auto",
     "mb-12",
+    "pr-16",
   ];
   const sudoClasses = [
     "absolute",
