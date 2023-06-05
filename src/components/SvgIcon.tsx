@@ -3,11 +3,14 @@ export type Logos = "google" | "facebook" | "apple";
 export type Icons =
   | "checkbox"
   | "checkbox-checked"
+  | "checkbox-rect"
+  | "checkbox-rect-checked"
   | "menu-dots"
   | "bell"
   | "pin"
   | "tune"
   | "document-with-stars"
+  | "document-with-stars-green"
   | "home"
   | "document"
   | "users";

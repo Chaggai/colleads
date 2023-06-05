@@ -11,9 +11,7 @@ const FirstTime = () => {
         <TitleWithMessage h1="היי יעל," h2="איזה כיף שהצטרפת אלינו!" />
       </div>
       <div className="mb-6 flex items-end">
-        <button className="relative -top-1">
-          <SvgIcon name="pin" />
-        </button>
+        <SvgIcon name="pin" className="relative -top-1" />
         <span className="mr-4">לוח הפניות ציבורי</span>
         <button className="mr-auto">
           <SvgIcon name="tune" />
