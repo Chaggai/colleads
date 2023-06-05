@@ -13,6 +13,11 @@ export type Icons =
   | "document-with-stars-green"
   | "home"
   | "document"
+  | "hamburger"
+  | "heart"
+  | "question-mark"
+  | "whatsapp"
+  | "x"
   | "users";
 
 type Props = {

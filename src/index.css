@@ -27,6 +27,10 @@
   display: none;
 }
 
+body.drawer {
+  overflow: hidden;
+}
+
 /* Screen spliting in SneakPeek page */
 .skewed:before {
   position: absolute;

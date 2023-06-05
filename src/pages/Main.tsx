@@ -2,7 +2,7 @@ import SvgIcon from "../components/SvgIcon";
 import CreateReferenceButton from "../components/Colleagues/CreateReferenceButton";
 import TitleWithMessage from "../components/TitleWithMessage";
 import ReferenceList from "../components/References/ReferenceList";
-import Drawer from "../components/signup/Drawer";
+import Drawer from "../components/Controlls/Drawer";
 import { useState } from "react";
 import Filter from "../components/Filter/Filter";
 
@@ -11,7 +11,7 @@ const Main = () => {
 
   return (
     <>
-      <Drawer show={showDrawer} click={setShowDrawer}>
+      <Drawer position="right" show={showDrawer} click={setShowDrawer}>
         <Filter />
       </Drawer>
       <div className="p-5 pb-0">

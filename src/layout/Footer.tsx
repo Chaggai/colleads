@@ -3,7 +3,7 @@ import SvgIcon from "../components/SvgIcon";
 
 const Footer = () => {
   return (
-    <footer className="mt-4 flex items-center justify-between px-8 pb-4">
+    <footer className="absolute bottom-0 flex h-footer w-full items-center justify-between px-8">
       <button>
         <Avatar
           className="h-[40px] w-[40px] border-none"

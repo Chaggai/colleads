@@ -6,7 +6,7 @@ const Filter = () => {
       <header className="mb-2 bg-white py-4">
         <h1 className="text-center font-bold">סינון לפי</h1>
       </header>
-      <div className="">
+      <div className="h-[calc(100vh-182px)] overflow-y-scroll">
         <section className="mb-0.5 bg-white pb-4 pr-6">
           <h2 className="-mr-2 py-4 font-bold">סקטור מקצועי</h2>
           <FilterItem label="פסיכולוגיה" />

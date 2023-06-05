@@ -9,6 +9,15 @@ export default {
       flex: {
         "two-columns": "1 0 150px",
       },
+      height: {
+        header: "88px",
+        body: "calc(100vh - 88px - 63px)",
+        footer: "63px",
+      },
+      margin: {
+        header: "88px",
+        footer: "63px",
+      },
       colors: {
         site: {
           bg: "#eef8ff",
