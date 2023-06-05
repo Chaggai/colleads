@@ -23,7 +23,7 @@ const Step2 = () => {
       <Checkbox label="השאר אותי מחובר במכשיר זה" />
       <Button
         label="שליחה"
-        className="mb-8 mt-56 h-[72px] w-full bg-site-lightblue text-white"
+        className="mb-8 mt-56 h-[72px] w-full bg-site-lightblue text-base text-white"
       />
       <div className="text-center">
         אין לך חשבון?{" "}

@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className="p-7">
+    <div className="p-5">
       <Outlet />
     </div>
   );

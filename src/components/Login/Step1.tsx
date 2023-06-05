@@ -10,7 +10,7 @@ const Step1 = () => {
       <LoginButton logo="google" click={() => navigate("/login/2")} />
       <LoginButton logo="facebook" click={() => navigate("/")} />
       <LoginButton logo="apple" click={() => navigate("/")} />
-      <div className="mt-48 text-center">
+      <div className="mt-40 text-center">
         אין לך חשבון?{" "}
         <a className="text-site-lightblue" href="#">
           ההרשמה מכאן

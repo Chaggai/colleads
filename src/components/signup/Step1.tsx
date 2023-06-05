@@ -11,10 +11,9 @@ const Step1 = () => {
   return (
     <div className="flex flex-col">
       <div className="mb-20">
-        <TitleWithMessage
-          title={t("signup.stepOne.title")}
-          message={t("signup.stepOne.subTitle")}
-        />
+        <TitleWithMessage h1={`${t("signup.stepOne.title")}`}>
+          <>{t("signup.stepOne.subTitle")}</>
+        </TitleWithMessage>
       </div>
       <div className="mb-10">
         <LoginButton logo={"google"} click={() => navigate("/signup/2")} />

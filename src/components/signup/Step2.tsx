@@ -12,10 +12,9 @@ const Step2 = () => {
   return (
     <div className="flex flex-col">
       <div className="mb-4">
-        <TitleWithMessage
-          title={t("signup.stepTwo.title")}
-          message={t("signup.stepTwo.message")}
-        />
+        <TitleWithMessage h1={`${t("signup.stepTwo.title")}`}>
+          <>{t("signup.stepTwo.message")}</>
+        </TitleWithMessage>
       </div>
       <div className="mb-14">
         <Input
@@ -54,7 +53,7 @@ const Step2 = () => {
       <Button
         label={t("signup.stepTwo.button")}
         click={() => navigate("/signup/3")}
-        className="btn h-[72px] bg-site-lightblue text-white"
+        className="btn h-[72px] bg-site-lightblue text-base text-white"
       />
     </div>
   );

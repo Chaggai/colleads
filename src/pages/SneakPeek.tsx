@@ -14,7 +14,8 @@ const SneakPeek = () => {
     dots: true,
     accessibility: true,
     arrows: false,
-    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
     speed: 500,
     rtl: true,
   };
@@ -24,13 +25,8 @@ const SneakPeek = () => {
   };
 
   return (
-    <div
-      className="skewed flex h-screen"
-      style={{
-        backgroundImage: "url(/img/sneak-pick.png)",
-        backgroundSize: "cover",
-      }}
-    >
+    <div className="skewed flex h-screen bg-black bg-opacity-30">
+      <img src="/img/sneak-peek.png" className="absolute -z-10" alt="" />
       <div className="h-1/2 w-full self-end bg-site-bg px-14 pt-10 text-right">
         <Slider {...settings}>
           <SliderItem

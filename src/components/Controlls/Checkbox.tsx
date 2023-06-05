@@ -10,7 +10,7 @@ const Checkbox = ({ label, checked = false, className }: Props) => {
   const [isChecked, setIsChecked] = useState(checked);
 
   return (
-    <label className={`flex ${className ? className : ""}`}>
+    <label className={`flex items-start ${className ? className : ""}`}>
       <input
         className="hidden"
         onChange={() => setIsChecked(!isChecked)}
@@ -18,9 +18,9 @@ const Checkbox = ({ label, checked = false, className }: Props) => {
         type="checkbox"
       />
       {isChecked ? (
-        <SvgIcon name="checkbox-checked" className="ml-4" />
+        <SvgIcon name="checkbox-checked" className="ml-4 mt-1" />
       ) : (
-        <SvgIcon name="checkbox" className="ml-4" />
+        <SvgIcon name="checkbox" className="ml-4 mt-1" />
       )}
       {label && <span>{label}</span>}
     </label>

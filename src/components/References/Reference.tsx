@@ -1,6 +1,6 @@
-import Avatar from "./Avatar";
-import Card from "./Card";
-import Button from "./Controlls/Button";
+import Avatar from "../Avatar";
+import Card from "../Card";
+import Button from "../Controlls/Button";
 
 export type TReference = {
   id: string;
@@ -16,7 +16,7 @@ type Props = {
 };
 const Reference = ({ reference }: Props) => {
   return (
-    <Card className="relative flex-two-columns pt-12 text-center leading-6 text-gray-500 shadow">
+    <Card className="relative flex-two-columns bg-gradient-to-b from-white to-site-bg pt-12 text-center leading-6 text-gray-500 shadow-md">
       <div className="flex h-full flex-col">
         <Avatar
           className="absolute right-[8px] top-[8px] h-[35px] w-[35px]"
@@ -27,9 +27,11 @@ const Reference = ({ reference }: Props) => {
           <li>
             <strong className="text-black">{reference.type}</strong>
           </li>
-          <li>מעוניינים ב: {reference.interesting}</li>
+          {reference.interesting && (
+            <li>מעוניינים ב: {reference.interesting}</li>
+          )}
           {reference.age && <li>עבור: בן {reference.age}</li>}
-          <li>איזור: {reference.area}</li>
+          {reference.area && <li>איזור: {reference.area}</li>}
         </ul>
         <Button
           label="עוד פרטים"

@@ -11,10 +11,9 @@ const Step3 = () => {
   return (
     <div className="flex flex-col">
       <div className="mb-4">
-        <TitleWithMessage
-          title={t("signup.stepThree.title")}
-          message={t("signup.stepThree.message")}
-        />
+        <TitleWithMessage h1={`${t("signup.stepThree.title")}`}>
+          <>{t("signup.stepThree.message")}</>
+        </TitleWithMessage>
       </div>
       <div className="mb-6">
         <ColleagueList />
@@ -22,7 +21,7 @@ const Step3 = () => {
       <Button
         label={t("signup.stepThree.button")}
         click={() => navigate("/signup/4")}
-        className="h-[72px] bg-site-lightblue text-white"
+        className="h-[72px] bg-site-lightblue text-base text-white"
       />
       <Link
         className="mt-6 text-center font-bold text-site-lightblue"

@@ -13,6 +13,7 @@ import SignupStep4 from "../components/signup/Step4";
 import Login from "./Login";
 import LoginStep1 from "../components/Login/Step1";
 import LoginStep2 from "../components/Login/Step2";
+import Main from "./Main";
 
 export const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
       {
         path: "/first-time",
         element: <FirstTime />,
+      },
+      {
+        path: "/main",
+        element: <Main />,
       },
     ],
   },
