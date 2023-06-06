@@ -1,7 +1,7 @@
 import Card from "../Card";
 import Colleague, { TColleague } from "./Colleague";
 
-import data from "../../../public/data/colleagues.json";
+import data from "../../data/colleagues.json";
 
 const ColleagueList = () => {
   const colleagues: TColleague[] = data;

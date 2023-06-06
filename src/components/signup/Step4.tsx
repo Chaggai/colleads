@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Avatar from "../Avatar";
 import { useNavigate } from "react-router-dom";
 
-import data from "../../../public/data/colleagues.json";
+import data from "../../data/colleagues.json";
 
 const Step4 = () => {
   const navigate = useNavigate();

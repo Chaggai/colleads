@@ -1,4 +1,4 @@
-import data from "../../../public/data/references.json";
+import data from "../../data/references.json";
 import Reference, { TReference } from "./Reference";
 
 const ReferenceList = () => {
