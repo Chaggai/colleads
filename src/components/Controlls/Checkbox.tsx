@@ -18,9 +18,9 @@ const Checkbox = ({ label, checked = false, className }: Props) => {
         type="checkbox"
       />
       {isChecked ? (
-        <SvgIcon name="checkbox-checked" className="ml-4 mt-1" />
+        <SvgIcon name="checkbox-checked" className="ml-4" />
       ) : (
-        <SvgIcon name="checkbox" className="ml-4 mt-1" />
+        <SvgIcon name="checkbox" className="ml-4" />
       )}
       {label && <span>{label}</span>}
     </label>

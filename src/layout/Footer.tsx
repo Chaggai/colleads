@@ -1,10 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import Avatar from "../components/Avatar";
 import SvgIcon from "../components/SvgIcon";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   return (
     <footer className="absolute bottom-0 flex h-footer w-full items-center justify-between px-8">
-      <button>
+      <button onClick={() => navigate("/profile")}>
         <Avatar
           className="h-[40px] w-[40px] border-none"
           name="אסף רפפורט"

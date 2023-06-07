@@ -22,7 +22,7 @@ const FirstTime = () => {
         <div className="mb-6 flex items-end">
           <SvgIcon name="pin" className="relative -top-1" />
           <span className="mr-4">לוח הפניות ציבורי</span>
-          <button className="mr-auto">
+          <button onClick={() => setShowDrawer(true)} className="mr-auto">
             <SvgIcon name="tune" />
           </button>
         </div>

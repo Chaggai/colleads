@@ -14,6 +14,7 @@ import Login from "./Login";
 import LoginStep1 from "../components/Login/Step1";
 import LoginStep2 from "../components/Login/Step2";
 import Main from "./Main";
+import Profile from "./Profile";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
         element: <Main />,
       },
     ],
+  },
+  {
+    path: "/profile",
+    element: <Profile />,
   },
   {
     path: "/loading",

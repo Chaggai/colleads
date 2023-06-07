@@ -18,6 +18,7 @@ export type Icons =
   | "question-mark"
   | "whatsapp"
   | "x"
+  | "pencil"
   | "users";
 
 type Props = {
