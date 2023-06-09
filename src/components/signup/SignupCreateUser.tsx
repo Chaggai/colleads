@@ -33,6 +33,11 @@ const SignupCreateUser = () => {
     updateDocument(userDetails);
   };
 
+  const user = {
+    firstname: auth.currentUser?.displayName?.split(" ")[0].trim(),
+    lastname: auth.currentUser?.displayName?.split(" ")[1].trim(),
+  };
+
   return (
     <div className="flex flex-col">
       <div className="mb-4">
@@ -45,16 +50,18 @@ const SignupCreateUser = () => {
           className="w-full"
           type="text"
           name="firstname"
+          value={user.firstname}
           placeholder={`${t("signup.input.firstname")}`}
         />
         <Input
           className="w-full"
           type="text"
+          value={user.lastname}
           name="lastname"
           placeholder={`${t("signup.input.lastname")}`}
         />
         <Select
-          options={["1", "2", "3", "4"]}
+          options={["פסיכולוגיה", "עו״ס", "ריפוי בעיסוק", "קלינאות תקשורת"]}
           name="proffession"
           defaultValue={`${t("signup.stepTwo.profession")}`}
           className="w-full"
