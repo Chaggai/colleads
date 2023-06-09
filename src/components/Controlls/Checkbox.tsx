@@ -1,23 +1,22 @@
-import { useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 import SvgIcon from "../SvgIcon";
 
 type Props = {
   checked?: boolean;
+  onCheck: Dispatch<SetStateAction<boolean>>;
   label?: string | JSX.Element;
   className?: string;
 };
-const Checkbox = ({ label, checked = false, className }: Props) => {
-  const [isChecked, setIsChecked] = useState(checked);
-
+const Checkbox = ({ label, checked = false, className, onCheck }: Props) => {
   return (
     <label className={`flex items-start ${className ? className : ""}`}>
       <input
         className="hidden"
-        onChange={() => setIsChecked(!isChecked)}
-        checked={isChecked}
+        onChange={() => onCheck(!checked)}
+        checked={checked}
         type="checkbox"
       />
-      {isChecked ? (
+      {checked ? (
         <SvgIcon name="checkbox-checked" className="ml-4" />
       ) : (
         <SvgIcon name="checkbox" className="ml-4" />

@@ -7,7 +7,6 @@ type Props = {
   click: () => void;
 };
 const LoginButton = ({ logo, click }: Props) => {
-  console.log(logo);
   return (
     <Button
       label={t("signup.stepOne.withFacebook")}

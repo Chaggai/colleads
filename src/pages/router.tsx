@@ -6,8 +6,6 @@ import LoadingPage from "./LoadingPage";
 import SneakPeek from "./SneakPeek";
 import FirstTime from "./FirstTime";
 import Signup from "./Signup";
-import SignupStep1 from "../components/signup/Step1";
-import SignupStep2 from "../components/signup/Step2";
 import SignupStep3 from "../components/signup/Step3";
 import SignupStep4 from "../components/signup/Step4";
 import Login from "./Login";
@@ -15,6 +13,8 @@ import LoginStep1 from "../components/Login/Step1";
 import LoginStep2 from "../components/Login/Step2";
 import Main from "./Main";
 import Profile from "./Profile";
+import SignupWith from "../components/signup/SignupWith";
+import SignupCreateUser from "../components/signup/SignupCreateUser";
 
 export const router = createBrowserRouter([
   {
@@ -63,11 +63,11 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/signup/1",
-        element: <SignupStep1 />,
+        element: <SignupWith />,
       },
       {
         path: "/signup/2",
-        element: <SignupStep2 />,
+        element: <SignupCreateUser />,
       },
       {
         path: "/signup/3",
