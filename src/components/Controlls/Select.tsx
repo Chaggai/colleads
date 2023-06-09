@@ -4,8 +4,9 @@ type Props = {
   options: string[];
   defaultValue: string;
   className?: string;
+  name: string;
 };
-const Select = ({ options, className, defaultValue }: Props) => {
+const Select = ({ options, className, defaultValue, name }: Props) => {
   const [isSelected, setIsSelected] = useState(false);
 
   return (
@@ -13,10 +14,10 @@ const Select = ({ options, className, defaultValue }: Props) => {
       className={`mb-[18px] h-[57px] rounded-full bg-white px-4 selection:text-red-400 ${
         isSelected ? "text-black" : "text-gray-400"
       } ${className ? className : ""}`}
-      name="profession"
+      name={name}
       id="profession"
+      defaultValue={defaultValue}
       onChange={() => setIsSelected(true)}
-      value={defaultValue}
     >
       <option disabled>{defaultValue}</option>
       {options.map((option) => (
