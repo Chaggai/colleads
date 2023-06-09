@@ -19,6 +19,8 @@ export type Icons =
   | "whatsapp"
   | "x"
   | "pencil"
+  | "chevron-right"
+  | "green-check"
   | "users";
 
 type Props = {

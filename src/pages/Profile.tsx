@@ -4,7 +4,18 @@ import SvgIcon from "../components/SvgIcon";
 const Profile = () => {
   return (
     <main>
-      <header className="h-[138px] p-5">HEADER</header>
+      <header className="h-[138px] p-5">
+        <SvgIcon name="chevron-right" />
+        <div className="mr-auto inline-block w-auto">
+          <SvgIcon name="pencil" className="mr-auto" />
+          <span className="mr-auto">
+            <figure>
+              קבלת הפניות
+              <SvgIcon name="green-check" />
+            </figure>
+          </span>
+        </div>
+      </header>
       <section className="relative mb-4 flex bg-white p-4 pt-10">
         <Avatar
           name="a a"
