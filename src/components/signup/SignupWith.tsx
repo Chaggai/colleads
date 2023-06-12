@@ -59,9 +59,21 @@ const SignupWith = () => {
         </TitleWithMessage>
       </div>
       <div className="mb-10">
-        <LoginButton logo={"google"} click={handleGoogleClick} />
-        <LoginButton logo={"facebook"} click={() => navigate("/signup/2")} />
-        <LoginButton logo={"apple"} click={() => navigate("/signup/2")} />
+        <LoginButton
+          logo={"google"}
+          label={t("signup.stepOne.withGoogle")}
+          click={handleGoogleClick}
+        />
+        <LoginButton
+          logo={"facebook"}
+          label={t("signup.stepOne.withFacebook")}
+          click={() => navigate("/signup/2")}
+        />
+        <LoginButton
+          logo={"apple"}
+          label={t("signup.stepOne.withApple")}
+          click={() => navigate("/signup/2")}
+        />
       </div>
       <div className="mb-20">
         <Checkbox

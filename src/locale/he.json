@@ -42,5 +42,12 @@
     "error": {
       "checkTerms": "נא לקרוא את תנאי השימוש ותנאי הפרטיות"
     }
+  },
+  "login": {
+    "stepOne": {
+      "withGoogle": "כניסה דרך גוגל",
+      "withFacebook": "כניסה דרך פייסבוק",
+      "withApple": "כניסה דרך אפל"
+    }
   }
 }
