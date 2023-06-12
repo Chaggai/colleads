@@ -14,7 +14,7 @@ import LoginStep2 from "../components/Login/Step2";
 import Main from "./Main";
 import Profile from "./Profile";
 import SignupWith from "../components/signup/SignupWith";
-import SignupCreateUser from "../components/signup/SignupCreateUser";
+import CreateUser from "../components/signup/CreateUser";
 
 export const router = createBrowserRouter([
   {
@@ -67,7 +67,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/signup/2",
-        element: <SignupCreateUser />,
+        element: <CreateUser />,
       },
       {
         path: "/signup/3",

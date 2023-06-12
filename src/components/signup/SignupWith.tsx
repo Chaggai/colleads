@@ -15,8 +15,8 @@ export interface IUserDetails {
   reciveNewsletter: boolean;
   firstname: string;
   lastname: string;
-  proffession: string;
-  licenseNumber: string;
+  profession: string;
+  licenseNumber: number;
   phoneNumber: string;
 }
 

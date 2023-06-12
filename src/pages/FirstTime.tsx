@@ -1,5 +1,5 @@
 import SvgIcon from "../components/SvgIcon";
-import CreateReferenceButton from "../components/Colleagues/CreateReferenceButton";
+import CreateReferenceButton from "../components/CreateReferenceButton";
 import TitleWithMessage from "../components/TitleWithMessage";
 import ReferenceList from "../components/References/ReferenceList";
 import { useState } from "react";

@@ -1,7 +1,8 @@
 import { useCallback, useState } from "react";
 import { doc, updateDoc } from "firebase/firestore";
-import { db } from "../configs/firebase"; // Import your Firebase instance
 import { FirebaseError } from "firebase/app";
+
+import { db } from "../configs/firebase";
 
 export const useUpdateDocument = <T>(collectionPath: string) => {
   const [isUpdating, setIsUpdating] = useState<boolean>(false);
