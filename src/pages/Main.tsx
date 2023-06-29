@@ -1,5 +1,5 @@
 import SvgIcon from "../components/SvgIcon";
-import CreateReferenceButton from "../components/CreateReferenceButton";
+import CreateReferenceButton from "../components/CreateReferralButton";
 import TitleWithMessage from "../components/TitleWithMessage";
 import ReferenceList from "../components/References/ReferenceList";
 import Drawer from "../components/Controlls/Drawer";

@@ -10,13 +10,13 @@ export default {
         "two-columns": "1 0 150px",
       },
       height: {
-        header: "88px",
-        body: "calc(100vh - 88px - 63px)",
-        footer: "63px",
+        header: "80px",
+        body: "calc(100vh - 80px - 60px)",
+        footer: "60px",
       },
       margin: {
-        header: "88px",
-        footer: "63px",
+        header: "80px",
+        footer: "60px",
       },
       colors: {
         site: {

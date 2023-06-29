@@ -1,6 +1,7 @@
+import { useNavigate } from "react-router-dom";
 import SvgIcon from "./SvgIcon";
 
-const CreateReferenceButton = () => {
+const CreateReferralButton = () => {
   const classes = [
     "relative",
     "rounded-full",
@@ -30,8 +31,14 @@ const CreateReferenceButton = () => {
     "border-site-lightblue",
     "bg-white",
   ];
+
+  const navigate = useNavigate();
+
   return (
-    <button className={`${classes.join(" ")}`}>
+    <button
+      className={`${classes.join(" ")}`}
+      onClick={() => navigate("/create-lead")}
+    >
       <div>
         <SvgIcon
           className={`${sudoClasses.join(" ")}`}
@@ -42,4 +49,4 @@ const CreateReferenceButton = () => {
     </button>
   );
 };
-export default CreateReferenceButton;
+export default CreateReferralButton;

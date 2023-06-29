@@ -67,3 +67,7 @@ ul.slick-dots li button {
 .input.error {
   @apply border border-red-400;
 }
+
+.select {
+  @apply mb-[18px] h-[57px] w-full rounded-full bg-white px-4;
+}

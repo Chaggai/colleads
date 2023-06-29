@@ -15,6 +15,7 @@ import Main from "./Main";
 import Profile from "./Profile";
 import SignupWith from "../components/signup/SignupWith";
 import CreateUser from "../components/signup/CreateUser";
+import CreateNewLead from "./CreateNewReferral";
 
 export const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
   {
     path: "/sneak-peek",
     element: <SneakPeek />,
+  },
+  {
+    path: "/create-lead",
+    element: <CreateNewLead />,
   },
   {
     path: "/login",
